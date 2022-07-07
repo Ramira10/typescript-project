@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev src/index.ts",
-    "start": "npm ts-node-dev src/index.ts"
+    "start": "node ts-node-dev src/index.ts",
+    "postinstall": "tsc"
   },
   "keywords": [],
   "author": "",
