@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import config from './config'
-require('dotenv').config()
+import dotenv from "dotenv"
+dotenv.config();
 
 (async () => {
     try {
