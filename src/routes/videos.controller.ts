@@ -5,11 +5,7 @@ import Video from './Video'
 export const getVideos: RequestHandler = async (req, res) => {
     try {
         const videos = await Video.find();
-        if(videos.length) {
-            res.status(200).send(videos)
-        } else {
-            res.status(200).send('Videos not found.')
-        }
+        res.status(200).send(videos)
     } catch(error) {
         console.log(error);
         res.status(400).send('Error');
